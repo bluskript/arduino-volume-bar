@@ -1,14 +1,13 @@
 #include <Arduino.h>
 #include <string.h>
 #ifndef PACKET_READER_H
-#define PACKET_REDER_H
+#define PACKET_READER_H
 
 void readPacket();
 
 struct ReaderState
 {
-    String lastPacket;
-    String buildPacket;
+    int dataCycle;
 };
 
 extern ReaderState readerState;
