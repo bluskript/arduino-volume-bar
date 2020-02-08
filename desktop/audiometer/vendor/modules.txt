@@ -1,0 +1,6 @@
+# github.com/gordonklaus/portaudio v0.0.0-20180817120803-00e7307ccd93
+github.com/gordonklaus/portaudio
+# github.com/tarm/serial v0.0.0-20180830185346-98f6abe2eb07
+github.com/tarm/serial
+# golang.org/x/sys v0.0.0-20200202164722-d101bd2416d5
+golang.org/x/sys/unix
