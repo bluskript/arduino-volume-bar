@@ -3,19 +3,19 @@
 void makeDisplay()
 {
     lcd.begin(LCD_WIDTH, 2);
-    //lcd.home();
+    lcd.home();
     //lcd.setCursor(0, 1);
     //
 }
 
 void updateDisplay()
 {
-    for (size_t i = 0; i < LCD_WIDTH; i++)
+    for (int i = 0; i < 2; i++)
     {
-        auto height = volume[i];
-        for (auto j = 0; j < height; j++)
+        char *concat = "";
+        for (int j = 0; j < volume; j++)
         {
-            lcd.setCursor(i, j);
+            lcd.setCursor(j, i);
             lcd.print(char(255));
         }
     }

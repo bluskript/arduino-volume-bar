@@ -5,8 +5,6 @@
 #ifndef DISPLAY_H
 #define DISPLAY_H
 
-extern LiquidCrystal lcd;
-
 void updateDisplay();
 void makeDisplay();
 

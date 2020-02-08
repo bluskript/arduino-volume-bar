@@ -5,6 +5,10 @@ void readPacket()
     if (Serial.available() > 0)
     {
         int data = Serial.read();
-        readerState.dataCycle++;
+        if (volume != data)
+        {
+            lcd.clear();
+            volume = data;
+        }
     }
 }

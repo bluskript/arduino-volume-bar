@@ -2,9 +2,7 @@
 #include "globals.h"
 #include "packetReader.h"
 #include "display.h"
-
-ReaderState readerState;
-int volume[16];
+int volume;
 /*
 VSS  GROUND
 VDD  5V
@@ -29,7 +27,6 @@ void setup()
 {
   pinMode(9, OUTPUT);
   analogWrite(9, 110);
-  readerState = ReaderState();
   Serial.begin(115200);
   makeDisplay();
 }
